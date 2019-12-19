@@ -257,6 +257,7 @@ with open("passwd.txt") as f:
 
 
 # for local or heroku app
+'''
 try:
     if argv[1] == "local":  # for local application, add local param: "$python website.py local"
         run(app, host='localhost', port=9853, debug=True)
@@ -264,3 +265,5 @@ try:
         app.run(host='0.0.0.0', port=argv[1])
 except:
     print "You need to specify an argument (local for local testing: $python website.py local)"
+    '''
+run(app, host='localhost', port=1001, debug=True)
